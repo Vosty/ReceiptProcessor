@@ -1,6 +1,11 @@
+// Fetch Rewards Receipt Processor
+
+// Libraries
 const EXPRESS = require('express')
 const UUID = require('uuid')
 const APP = EXPRESS()
+
+// Some Constants
 const PORT = process.env.PORT || 3000
 
 const DATE_PLACEHOLDER = '2024-01-19'
@@ -10,9 +15,6 @@ const FOUR_PM = new Date(DATE_PLACEHOLDER + ' ' + '16:00')
 
 // The map where we will store our scores
 const SCORE_MAP = new Map()
-
-APP.use(EXPRESS.json())
-
 
 
 
@@ -89,10 +91,15 @@ function retrieve_score(uuid) {
 
 
 
+// --API Functions--
+
+APP.use(EXPRESS.json())
+
 // Start our server at localhost:{PORT} (default is 3000)
 APP.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 })
+
 
 // Endpoint for receiving receipts.
 // Grades them, and returns a UUID after the scoring is complete
