@@ -4,7 +4,10 @@ Part of application for Fetch Rewards
 Follows specifications at https://github.com/fetch-rewards/receipt-processor-challenge
 
 ## Running this project
-1. Download this repo (run command `gh repo clone Vosty/ReceiptProcessor` in an empty directory)
+1. Download this repo. (You can run this command in an empty directory)
+```sh
+gh repo clone Vosty/ReceiptProcessor
+```
 
 2. Navigate to the repo in your terminal
 
