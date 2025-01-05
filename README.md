@@ -40,7 +40,8 @@ As the API is defined by a schema I didn't do too much input checking/sanitizing
 I feel that the rest of the code should be well explained by the comments / organization.
 
 The two main files have included unit tests written in Jest. If you have node installed, you can also run these included unit tests.
-Run
+
+Run this command in the repo directory to run unit tests (defaulted to verbose so you can see what they are).
 ```sh
 npm test
 ```
