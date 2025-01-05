@@ -27,17 +27,19 @@ By default this application will run on your machine at `localhost:3000`. Test w
 
 ## Reviewing the Code
 
-The main entry point into this project is the file [index.js](https://github.com/Vosty/ReceiptProcessor/blob/main/index.js)
+The main entry point into this project is the file [index.js](https://github.com/Vosty/ReceiptProcessor/blob/main/index.js). This is where the API lives.
 
-The other main files of interest are [database.js](https://github.com/Vosty/ReceiptProcessor/blob/main/database.js) and [processor.js](https://github.com/Vosty/ReceiptProcessor/blob/main/processor.js). These files have included unit tests (Jest) for your perusing
-.
-It is written in javascript primarily using node.js for library and runtime support and the libary expressjs for rest API support.
+The other main files of interest are [database.js](https://github.com/Vosty/ReceiptProcessor/blob/main/database.js) and [processor.js](https://github.com/Vosty/ReceiptProcessor/blob/main/processor.js). The API calls into these files for the handling of data and business logic.
+
+
+
+The app is written in javascript primarily using node.js for library and runtime support and the libary expressjs for rest API support. I will fully admit this wasn't done for any specific technical reason; I just like javascript & node.js and given that this is an unpaid homework assignment I wanted things to be comfortable / breezy.
 
 As the API is defined by a schema I didn't do too much input checking/sanitizing beyond a somewhat bare minumum of checking if the required fields exist. However, it should return the correct status codes as well as a short descriptive message of what went wrong with improper data.
 
-The rest of the code should be well explained by the comments.
+I feel that the rest of the code should be well explained by the comments / organization.
 
-If you have node installed, you can also run the included unit tests.
+The two main files have included unit tests written in Jest. If you have node installed, you can also run these included unit tests.
 Run
 ```sh
 npm test
