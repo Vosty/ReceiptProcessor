@@ -1,5 +1,7 @@
 const database = require('./database')
 
+
+// Sets up clean "database" (map) before each test
 beforeEach(() => {
     database.init()
 })

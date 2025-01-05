@@ -8,11 +8,14 @@ const UUID = require('uuid')
 const database = require('./database')
 const processor = require('./processor')
 
+// Our REST Application
 const APP = EXPRESS()
 
 // Constants
 const PORT = process.env.PORT || 3000
 
+
+// Helper Functions
 
 // Wrapper function for storing our score to our 'database'
 function store_score(uuid, score) {
@@ -26,10 +29,12 @@ function retrieve_score(uuid) {
 }
 
 
+
+
+
+
+// PROGRAM EXECUTION STARTS HERE
 database.init()
-
-// --API Functions--
-
 APP.use(EXPRESS.json())
 
 // Start our server at localhost:{PORT} (default is 3000)
@@ -37,6 +42,7 @@ APP.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 })
 
+// --API Functions--
 
 // Endpoint for receiving receipts.
 // Grades them, and returns a UUID after the scoring is complete

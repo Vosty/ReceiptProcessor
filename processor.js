@@ -21,7 +21,7 @@ function score_total(total) {
     return score
 }
 
-// +2 points for every 2 items on the receipt
+// +5 points for every 2 items on the receipt
 // If the trimmed length of the item descriptions is a mutliple of 3
 // multiply the price by 0.2 and round up to the nearest integer for points
 function score_items(items) {
