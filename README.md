@@ -1,6 +1,7 @@
 # Fetch Rewards Receipt Processor
 
 Part of application for Fetch Rewards
+
 Follows specifications at https://github.com/fetch-rewards/receipt-processor-challenge
 
 ## Running this project
